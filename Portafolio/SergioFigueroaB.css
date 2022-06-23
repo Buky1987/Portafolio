@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
+body {
+    margin: 2em;
+    padding-top: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+nav {
+    font-family: "PT Sans Narrow", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li a {
+    color: #616161;
+    text-shadow: #e0e0e0 1px 1px 0;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+nav li a:hover {
+    color: darkslategray;
+}
+
+@media screen and (min-width: 480px) {
+    nav ul {
+        display: flex;
+    }
+}
+
+.saludo {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.mano {
+    height: 10vw;
+}
+
+.saludo h2 {
+    font-size: 8vw;
+    padding: 20px;
+}
+
+.mundo {
+    display: flex;
+    justify-content: center;
+    font-size: 6vmin;
+    color: rgba(60%, 20%, 20%, 2);
+}
+
+.mundo::before {
+    content: "";
+    position: absolute;
+    animation: blinkNaim 500ms linear infinite;
+}
+
+@keyframes blinkAnim {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.descripcion h4 {
+    display: flex;
+    align-items: center;
+    margin: 2vw 8vw 2vw 8vw;
+    color: rgba(20%, 40%, 40%, 2);
+    font-size: 4vmin;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.boton .btn-primary {
+    margin: 5px;
+}
+
+.boton .btn-success {
+    margin: 5px;
+}
+
+@media screen and (max-width: 320px) {
+    .btn-success {
+        align-items: center;
+        width: 90%;
+    }
+
+    .btn-primary {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .btn-success {
+        align-items: center;
+        width: 90%;
+    }
+
+    .btn-primary {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .btn-success {
+        align-items: center;
+        width: 90%;
+    }
+
+    .btn-primary {
+        width: 90%;
+    }
+}
+
+.icono-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vmax;
+}
+
+.icono-2 {
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
+    height: 6vmin;
+    width: 6vmin;
+}
+
+.escribo h3 {
+    display: flex;
+    justify-content: right;
+    color: #616161;
+    text-shadow: #e0e0e0 1px 1px 0;
+    margin-left: 4rem;
+    margin-top: -1.2em;
+    margin-bottom: 2em;
+    font-size: 4vmin;
+}
+
+.escribo h4 {
+    display: flex;
+    align-items: center;
+    margin: 4vw 8vw 2vw 8vw;
+    color: rgba(0, 0, 0, .6);
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
+    font-size: 5vmin;
+}
+
+.escribo h5 {
+    display: flex;
+    align-items: center;
+    margin: 2vw 40vw 4vw 8vw;
+    color: rgba(10, 40, 0, 0.6);
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+    font-size: 2vmax;
+}
+
+.flecha-gif {
+    height: 12vmin;
+}
+
+@media screen and (max-width: 320px) {
+    .escribo h5 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .escribo h5 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .escribo h5 {
+        width: 90%;
+    }
+}
+
+.developer {
+    height: 50vmin;
+}
+
+.mis-proyectos {
+    display: flex;
+    justify-content: center;
+    color: rgba(60%, 20%, 20%, 2);
+}
+
+.clip {
+    height: 5vmax;
+}
+
+.mis-proyectos .clip {
+    margin: -2vmax 1vmax 2vmax 0;
+}
+
+.proyectos {
+    display: flex;
+    justify-content: center;
+}
+
+.mi-web {
+    width: 80vmin;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 320px) {
+    .mi-web {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .mi-web {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .mi-web {
+        width: 90%;
+    }
+}
+
+.pie-pagina {
+    display: flex;
+    justify-content: center;
+    height: 5vmax;
+}
+
+.icono {
+    justify-content: space-around;
+    width: 5vmax;
+}
