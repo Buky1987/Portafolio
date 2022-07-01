@@ -50,25 +50,57 @@ nav li a:hover {
 
 .descripcion h1 {
     margin-top: 40px;
-    margin-left: 8vw;
+    margin-left: 0vw;
     font-size: 6vmax;
     font-family: 'Anton', sans-serif;
-    border: 1px solid chocolate;
+    border: 1px solid red;
+
 }
 
 .chile {
     height: 8vmax;
 }
 
-.yo {
-    height: 14em;
-    float: left;
-    margin: 0px 4em 30px 8vw;
-    border-radius: 100%;
-    border: 1px solid coral;
+@media all and (max-width: 900px) {
+    .descripcion {
+        justify-content: center;
+    }
 }
 
-.descripcion p {
-    float: right;
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper>* {
+    padding: 10px;
+    margin: 0px;
+}
+
+.main {
+    text-align: left;
     border: 1px solid red;
+}
+
+.yo {
+    height: 16em;
+    border-radius: 100%;
+    justify-content: center
+}
+
+@media all and (min-width: 900px) {
+    .main {
+        flex: 2 0px;
+    }
+
+    .yo {
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
 }
