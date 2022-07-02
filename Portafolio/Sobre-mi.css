@@ -91,6 +91,24 @@ nav li a:hover {
     justify-content: center
 }
 
+.wrapper>.yo-icono>.icono {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icono {
+    height: 4em;
+    width: 4em;
+}
+
+@media all and (max-width: 320px) {
+    .icono {
+        height: 3em;
+        width: 3em;
+    }
+}
+
 @media all and (min-width: 900px) {
     .main {
         flex: 2 0px;
