@@ -122,3 +122,13 @@ nav li a:hover {
         order: 2;
     }
 }
+
+.habilidades {
+    margin-top: 60px;
+}
+
+.iconos {
+    height: 8vmax;
+    width: 8vmax;
+    border: 1px solid red;
+}
