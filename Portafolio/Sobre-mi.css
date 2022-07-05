@@ -123,12 +123,26 @@ nav li a:hover {
     }
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .habilidades {
     margin-top: 60px;
+    border: 1px solid red;
 }
 
 .iconos {
     height: 8vmax;
     width: 8vmax;
+    margin-top: -4rem;
+    margin-bottom: 20px;
+    border: 1px solid red;
+}
+
+.desarrollador {
+    height: 20vmax;
+    width: 30vmax;
     border: 1px solid red;
 }
