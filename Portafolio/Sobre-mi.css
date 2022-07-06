@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
 body {
     margin: 2em;
     padding-top: 0;
@@ -30,18 +32,20 @@ nav li a {
     display: block;
     text-decoration: none;
     padding: 0.5em 1em;
-    border: 1px solid red;
 }
 
 nav li a:hover {
     color: darkslategray;
 }
 
+/* Adaptibilidad pantalla */
 @media screen and (min-width: 480px) {
     nav ul {
         display: flex;
     }
 }
+
+/* Fin */
 
 .descripcion {
     display: flex;
@@ -53,7 +57,6 @@ nav li a:hover {
     margin-left: 0vw;
     font-size: 6vmax;
     font-family: 'Anton', sans-serif;
-    border: 1px solid red;
 
 }
 
@@ -61,11 +64,14 @@ nav li a:hover {
     height: 8vmax;
 }
 
+/* Adaptibilidad pantalla */
 @media all and (max-width: 900px) {
     .descripcion {
         justify-content: center;
     }
 }
+
+/* Fin */
 
 .wrapper {
     display: flex;
@@ -82,7 +88,6 @@ nav li a:hover {
 
 .main {
     text-align: left;
-    border: 1px solid red;
 }
 
 .yo {
@@ -102,6 +107,7 @@ nav li a:hover {
     width: 4em;
 }
 
+/* Adaptibilidad pantalla */
 @media all and (max-width: 320px) {
     .icono {
         height: 3em;
@@ -123,26 +129,110 @@ nav li a:hover {
     }
 }
 
-.container {
+/* Fin */
+
+.habilidades {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icono-habilidades {
+    height: 8em;
+    width: 8em;
+    margin-top: 2em;
+    margin-bottom: 20px;
+}
+
+/* Adaptibilidad pantalla */
+@media all and (max-width: 320px) {
+    .icono-habilidades {
+        height: 2em;
+        width: 2em;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .icono-habilidades {
+        height: 5em;
+        width: 5em;
+    }
+}
+
+@media all and (max-width: 414px) {
+    .icono-habilidades {
+        height: 6em;
+        width: 6em;
+    }
+}
+
+/* Fin */
+
+.interes-personal {
     display: flex;
     justify-content: center;
 }
 
-.habilidades {
-    margin-top: 60px;
-    border: 1px solid red;
+.intereses {
+    font-family: "PT Sans Narrow", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 5vmax;
+    color: brown;
 }
 
-.iconos {
-    height: 8vmax;
-    width: 8vmax;
-    margin-top: -4rem;
-    margin-bottom: 20px;
-    border: 1px solid red;
+.corazon-negro {
+    margin-top: 1vmax;
+    margin-right: 1vmax;
+    height: 4vmax;
+    width: 4vmax;
 }
 
-.desarrollador {
-    height: 20vmax;
-    width: 30vmax;
+.destello {
+    display: flex;
+    justify-content: center;
+}
+
+.desarrollandome {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    font-size: 1em;
+    margin-bottom: 2vmax;
     border: 1px solid red;
+    font-weight: bold;
+}
+
+.hobby {
+    width: 32vmax;
+    font-size: 1em;
+    border: 1px solid red;
+    font-weight: bold;
+}
+
+.guitarra {
+    float: right;
+    height: 24em;
+    width: 28em;
+}
+
+@media all and (max-width: 320px) {
+    .guitarra {
+        display: flex;
+        justify-content: center;
+        height: 12em;
+        width: 14em;
+    }
+
+    .desarrollandome {
+        display: flex;
+        justify-content: center;
+    }
 }
