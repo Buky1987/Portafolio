@@ -57,6 +57,7 @@ nav li a:hover {
     margin-left: 0vw;
     font-size: 6vmax;
     font-family: 'Anton', sans-serif;
+    color: rgba(20%, 30%, 50%, 2);
 
 }
 
@@ -88,6 +89,7 @@ nav li a:hover {
 
 .main {
     text-align: left;
+    color: rgba(20%, 30%, 50%, 2);
 }
 
 .yo {
@@ -206,15 +208,15 @@ nav li a:hover {
     width: auto;
     font-size: 1em;
     margin-bottom: 2vmax;
-    border: 1px solid red;
     font-weight: bold;
+    color: rgba(20%, 30%, 50%, 2);
 }
 
 .hobby {
     width: 32vmax;
     font-size: 1em;
-    border: 1px solid red;
     font-weight: bold;
+    color: rgba(20%, 30%, 50%, 2);
 }
 
 .guitarra {
@@ -225,14 +227,39 @@ nav li a:hover {
 
 @media all and (max-width: 320px) {
     .guitarra {
-        display: flex;
         justify-content: center;
-        height: 12em;
-        width: 14em;
+        height: 8em;
+        width: 10em;
+        margin-bottom: 20px;
     }
 
     .desarrollandome {
-        display: flex;
+        align-content: center;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .guitarra {
         justify-content: center;
+        height: 14em;
+        width: 16em;
+        margin-bottom: 20px;
+    }
+
+    .desarrollandome {
+        align-content: center;
+    }
+}
+
+@media all and (max-width: 414px) {
+    .guitarra {
+        justify-content: center;
+        height: 18em;
+        width: 20em;
+        margin-bottom: 20px;
+    }
+
+    .desarrollandome {
+        align-content: center;
     }
 }
