@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 
+body {
+    margin: 2em;
+    padding-top: 0;
+}
+
 nav {
     font-family: "PT Sans Narrow", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -33,8 +38,81 @@ nav li a:hover {
     color: darkslategray;
 }
 
+/* Adaptibilidad pantalla */
+@media screen and (min-width: 480px) {
+    nav ul {
+        display: flex;
+    }
+}
+
+.apuntes {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 6vmax;
+    width: 6vmax;
+    margin-top: 30px;
+    margin-right: 2vmax;
+}
+
 h2 {
-    font-size: 6vmax;
+    margin-top: 40px;
+    font-size: 3.8vmax;
     font-family: 'Anton', sans-serif;
+    color: rgba(50%, 20%, 30%, 2);
+    border: 1px solid red;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vmax;
+    font-weight: bold;
+    font-size: 1.8vmax;
+    border: 1px solid red;
     color: rgba(20%, 30%, 50%, 2);
+}
+
+.centrar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#imagen-html5 {
+    margin: auto;
+    height: 10vmax;
+    width: 10vmax;
+    margin-top: 20px;
+    border: 1px solid red;
+}
+
+#titulo {
+    margin-top: 20px;
+    color: rgba(50%, 20%, 30%, 2);
+}
+
+#descripcion {
+    color: rgba(20%, 30%, 50%, 2);
+}
+
+#estructura-html5 {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgba(50%, 20%, 30%, 2);
+}
+
+#estructura {
+    margin: auto;
+    height: 40vmax;
+    width: 40vmax;
+}
+
+#codigo-html5 {
+    margin: auto;
+    height: 40vmax;
+    width: 40vmax;
 }
