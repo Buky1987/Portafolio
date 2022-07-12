@@ -116,3 +116,20 @@ p {
     height: 40vmax;
     width: 40vmax;
 }
+
+
+#slidy-container {
+    width: 40%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.codigo-html5 {
+    height: 10em;
+    width: 10em;
+}
+
+.estructura {
+    height: 10em;
+    width: 10em;
+}
