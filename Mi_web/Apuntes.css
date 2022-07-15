@@ -103,6 +103,7 @@ p {
 }
 
 #slider {
+    height: 40vmax;
     width: 60vmax;
     margin: 0 auto;
     position: relative;
